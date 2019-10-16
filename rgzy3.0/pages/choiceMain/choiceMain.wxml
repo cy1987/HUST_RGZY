@@ -1,0 +1,4 @@
+<view  class="startbotton" bindtap="toCalc">开始答题</view>
+
+
+

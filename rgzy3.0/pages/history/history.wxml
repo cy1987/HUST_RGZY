@@ -1,0 +1,23 @@
+<view class="page">
+    <view class="nav-son white" bindtap="listpx">
+        <view class="center">今日习题解析</view>
+        <image src='{{imgUrl}}'></image>
+    </view>
+    <view wx:for="{{content}}" wx:for-index="index" wx:for-item="item">
+        <view class="temp {{index%2 ? 'white' : 'hui'}} {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+        
+            <view class="nav-son" data-index="{{index}}" bindtap="listans">
+                {{item}} 
+                <image src='{{imgUrlLogs[index]}}'></image>
+            </view>     
+            <view class="temp {{index%2?'white':'hui'}} {{ansopen[index]?'slidown':'slidup'}} {{ansshow[index] ? 'disappear':''}}">
+              <view wx:for="{{anscontent[index]}}" wx:for-index="idx" wx:for-item="ansitem">
+                <view>
+                  {{ansitem}}
+                </view>               
+              </view>
+            </view>
+        </view>
+    </view>
+</view>
+
