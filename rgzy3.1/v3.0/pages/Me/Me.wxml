@@ -1,0 +1,54 @@
+<view>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"  bindgetuserinfo="getUserInfo"> 点击登陆 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="others">  用户名: {{userInfo.nickName}}\n天数:    {{day}}   总答题数:    {{answeredAll}}</text>
+    </block>
+  </view>
+  
+</view>
+
+  <view class='grayLine'></view>
+  
+  <view class='grayLine2'></view>
+
+  <view class='personalInformation'>
+    <image class='icon'  src='../../images/1-02.png'></image>
+    <picker bindchange="bindPickerChange" value="{{index}}" id="1"data-n="0" range="{{array}}">
+      <view  class='text' >
+        按题型选择
+      </view>
+    </picker>
+  </view>
+ <view class='grayLine1'></view>
+
+  <view class='personalInformation'>
+    <image class='icon'  src='../../images/1-02.png'></image>
+    <picker bindchange="bindPickerChange" value="{{index}}"  id="1"data-n="1" range="{{array2}}">
+      <view  class='text' >
+        按年级选择
+      </view>
+    </picker>
+  </view>
+
+   <view class='grayLine1'></view>
+ 
+  <view class='personalInformation'>
+    <image class='icon'  src='../../images/1-02.png'></image>
+
+      <view  class='text' >
+        自定义题型
+      </view>
+ 
+  </view>
+
+  <view class='grayLine2'></view>
+
+  <view class='personalInformation' bindtap='questionBack'>
+    <image class='icon'  src='../../images/1-03.png'></image>
+    <view class='text'>我要出题</view>
+  </view>
+
+</view>
