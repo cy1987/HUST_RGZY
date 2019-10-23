@@ -1,0 +1,28 @@
+
+
+<image class="background-image" src="{{source}}"></image>
+
+
+<view class="page" style="opacity:{{0.7}}">
+    <view class="nav-son white" bindtap="listpx">
+        <view class="center" >本次错题解析</view>
+        <image src='{{imgUrl}}'></image>
+    </view>
+    <view wx:for="{{content}}" wx:for-index="index" wx:for-item="item">
+        <view class="temp {{index%2 ? 'white' : 'hui'}} {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+        
+            <view class="nav-son" data-index="{{index}}" bindtap="listans">
+                {{item}} 
+
+            </view>     
+            <view class="temp {{index%2?'white':'hui'}} {{ansopen[index]?'slidown':'slidup'}} {{ansshow[index] ? 'disappear':''}}">
+              <view wx:for="{{anscontent[index]}}" wx:for-index="idx" wx:for-item="ansitem">
+                <view>
+                  {{ansitem}}
+                </view>               
+              </view>
+            </view>
+        </view>
+    </view>
+</view>
+
