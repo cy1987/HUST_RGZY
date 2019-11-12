@@ -1,0 +1,30 @@
+<image class="background-image" src="{{source}}"></image>
+
+
+<view class="page" style="opacity:{{0.7}}">
+    <view class="nav-son white" >
+      <picker mode="date" value="{{date}}" start="2019-09-01" end="2030-09-01" bindchange="bindDateChange">
+          <view class="center">
+            {{date}}错题解析  
+          </view>
+        </picker>
+        <image src='{{imgUrl}}' bindtap="listpx"></image>
+    </view>
+    <view wx:for="{{content}}" wx:for-index="index" wx:for-item="item">
+        <view class="temp {{index%2 ? 'white' : 'hui'}} {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+        
+            <view class="nav-son" data-index="{{index}}" bindtap="listans">
+                {{item}} 
+
+            </view>     
+            <view class="temp {{index%2?'white':'hui'}} {{ansopen[index]?'slidown':'slidup'}} {{ansshow[index] ? 'disappear':''}}">
+              <view wx:for="{{anscontent[index]}}" wx:for-index="idx" wx:for-item="ansitem">
+                <view>
+                  {{ansitem}}
+                </view>               
+              </view>
+            </view>
+        </view>
+    </view>
+</view>
+
