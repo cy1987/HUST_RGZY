@@ -1,0 +1,111 @@
+
+
+.question_count_r{
+  color: black;
+  font-size: 50rpx;
+  width: 25%;
+  height: 60rpx;
+  text-align: left;
+  
+  margin-top: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question_count_w{
+  color: black;
+  font-size: 50rpx;
+  width: 25%;
+  height: 60rpx;
+  text-align: center;
+  margin-top: 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.con{
+  width: 80%;
+  height: 9vh;
+  margin-left: 75rpx;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast{
+  width: 100rpx;
+  height: 9vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.blackboard{
+  color: #fff;
+  font-size: 50rpx;
+  width: 100%;
+  height: 189.35rpx;
+  text-align: center;
+  margin-top: 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.every{
+  display: inline-block;
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 0.3vh;
+  margin-left:5rpx; 
+  margin-bottom: 0.3vh;
+  margin-right: 5rpx;
+}
+
+.every_back{
+  display: inline-block;
+  width: 135rpx;
+  height: 105rpx;
+  margin-top: 0.3vh;
+  margin-left:20rpx; 
+  margin-bottom: 3vh;
+  margin-right: 15rpx;
+}
+
+.every_ok{
+  display: inline-block;
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 0.3vh;
+  margin-left:5rpx; 
+  margin-bottom: 0.3vh;
+  margin-right: 5rpx;
+}
+
+
+
+.question_count_w{
+  background-image: url("http://106.15.200.46/img/PageCalc/wrong_count.png");
+  background-size: 100% 100%
+}
+.question_count_r{
+  background-image: url("http://106.15.200.46/img/PageCalc/right_count.png");
+  background-size: 100% 100%;
+}
+
+.blackboard{
+  background-image: url("http://106.15.200.46/img/PageCalc/%E9%BB%91%E6%9D%BF.png");
+  background-size: 100% 100%;
+}
+
+page{
+  background-image: url("http://106.15.200.46/img/PageCalc/background.jpg");
+  background-size: 100% 100%;
+}
