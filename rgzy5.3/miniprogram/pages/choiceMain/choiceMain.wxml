@@ -1,3 +1,0 @@
-<view  class="startbotton" bindtap="toCalc">{{text}}</view>
-
-<input class = "questNum" type="number" bindinput="bindKeyInput" maxlength="2" placeholder="{{questionNum}}"></input>
