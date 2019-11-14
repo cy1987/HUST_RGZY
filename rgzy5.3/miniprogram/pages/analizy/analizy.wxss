@@ -1,0 +1,20 @@
+/* pages/analizy/analizy.wxss */
+.background-image{
+    height : 120%;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+.center{
+  position: relative;
+  left:   20%;
+}
+
+.background-image{
+    height : 120%;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
