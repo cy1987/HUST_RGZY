@@ -1,0 +1,29 @@
+.startbotton{
+  height: 160rpx;
+  width:400rpx;
+  display: flex;
+  margin-left: 23%;
+  margin-top: 39vh;
+  margin-bottom: 0vh;
+  font-size: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questNum{
+  margin-left: 43%;
+  margin-top: 323rpx;
+  margin-bottom: 0vh;
+  font-size: 15pt;
+  
+}
+
+.startbotton{
+  background-image: url("http://106.15.200.46/img/PageCalc/%E5%BC%80%E5%A7%8B%E6%8C%89%E9%92%AE.png?5");
+  background-size: 100% 100%
+}
+page{
+  background-image: url("http://106.15.200.46/img/PageCalc/%E7%AD%94%E9%A2%98%E5%BC%80%E5%A7%8B.jpg?123");
+  background-size: 100% 100%;
+}
