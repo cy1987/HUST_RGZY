@@ -1,0 +1,26 @@
+<!--pages/index2/index2.wxml-->
+
+
+<!-- <image class="clock" value="{{countdown}}" src="/images/pageCalc/倒计时时钟.png"></image> -->
+
+<view class="question_count_r">　{{rightNum}}题</view>
+<view class="question_count_w">　{{wrongNum}}题</view>
+<view class="blackboard" value="{{val}}">{{question}}　=　{{inputNumber}}</view>
+
+<view class="con">
+
+  <image class="toast" hidden="{{hid}}" src="{{source}}"></image>
+</view>
+
+<image class="every" bindtap="clickBtn" id="{{id1}}" src="/images/pageCalc/1.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id2}}" src="/images/pageCalc/2.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id3}}" src="/images/pageCalc/3.png"></image>
+<image class="every_back" bindtap="clickBtn" id="{{idb}}" src="/images/pageCalc/back.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id4}}" src="/images/pageCalc/4.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id5}}" src="/images/pageCalc/5.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id6}}" src="/images/pageCalc/6.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id0}}" src="/images/pageCalc/0.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id7}}" src="/images/pageCalc/7.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id8}}" src="/images/pageCalc/8.png"></image>
+<image class="every" bindtap="clickBtn" id="{{id9}}" src="/images/pageCalc/9.png"></image>
+<image class="every_ok" bindtap="nextQuestion" id="{{idok}}" src="/images/pageCalc/ok.png"></image>
